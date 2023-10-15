@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
-    
-      
     <link href="output.css" rel="stylesheet" />
 </head>
 <body>
-    <section id="products.html">
-
+    <section id="cart.html">
         <section  class="font-bold   h-[5rem] justify-center items-center w-full">
             <nav class="flex justify-between items-center text-center p-2 m-2  max-w-[1330px] mt-5">
                 <div>
@@ -25,14 +18,18 @@
                     <ul class="flex justify-center gap-5 ">
                         <li ><a href="index.html" class="hover:text-red-300 transition duration-300">HOME</a></li>
                         <li><a href="about.html" class="hover:text-red-300 transition duration-300">ABOUT US</a></li>
-                        <li><a href="#" class="hover:text-red-300 transition duration-300">PRODUCTS</a></li>
-                        <li><a href="cart.html" class="hover:text-red-300 transition duration-300">CART</a></li>
+                        <li><a href="products.html" class="hover:text-red-300 transition duration-300">PRODUCTS</a></li>
+                        <li><a href="#" class="hover:text-red-300 transition duration-300">CART</a></li>
                         <li><a href="contact.html" class="hover:text-red-300 transition duration-300">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class=" flex mx-2 gap-9  ">
                     <i class="fa fa-search hover:text-red-300 transition duration-300" aria-hidden="true"></i>
-                    <i class="fa fa-shopping-cart hover:text-red-300 transition duration-300" aria-hidden="true"></i>
+                    
+                    <div class="flex cart">
+                        <i class="fa fa-shopping-cart hover:text-red-300 transition duration-300" aria-hidden="true"></i>
+                        <sup id="count" class="text-black">0</sup>
+                    </div>
                     
                 </div>
                 <div class="hidden max-lg:block ">
@@ -59,47 +56,79 @@
         <section class="m-3 p-3 ">
             <div class=" p-3 flex flex-col justify-center items-center text-center">
                 <div class="flex flex-col mt-3 justify-center text-center items-center">
-                    <h3 class=" font-bold text-[3rem] ">OUR PRODUCTS</h3>
+                    <h3 class=" font-bold text-[3rem] ">YOUR CART</h3>
                     <span class="bg-red-500 w-[15rem] h-1"></span>
-                    <P class="mt-5  text-[20px]" ><i>"Our Organic Food Products Are Nourishing And Pocket Friendly."</i></P>
+                    <P class="mt-5  text-[20px]" ><i>"Healthy Purchases Make Healthy Families"</i></P>
                 </div >
                 
-                    <div class="m-3 p-3 mt-10 flex flex-col relative justify-center text-center items-center rounded-lg bg-cover bg-no-repeat w-full"
+                <div class="m-3 p-3 mt-10 flex flex-col relative justify-center text-center items-center rounded-lg bg-cover bg-no-repeat w-full"
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url('./images/about1.jpg')">
 
-                            <div class="flex flex-col p-6 justify-center items-center text-center mt-3 w-[50%] max-sm:w-full  rounded-full"
-                            style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ">
-                                <h4 class="font-bold text-white text-center ">NUTRICIOUS CEREAL</h4>
-                                <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>
-                                
-                            </div>
-                            <div  id="mainDiv" class=" w-full justify-center text-center items-center p-3 flex flex-col rounded-[3rem] mt-10"  >
-                                    
-                                </div>
-                                <div class="mt-10 swiper w-full ">
-                                    <div class="slide-container justify-center items-center text-center max-md:mx-0 max-sm:gap-0 overflow-hidden">
-                                        <div id="motion" class="justify-center  items-center text-center swiper-wrapper">
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="swiper-button-next swiper-navBtn"></div>
-                                    <div class="swiper-button-prev swiper-navBtn"></div>
-                                    <div class="swiper-pagination text-white bg-white p-3"></div>
-                                    
-                                </div>
-                            </div>
-                    
-                           
-                    
+                    <div class="flex flex-col p-6 justify-center items-center text-center mt-3 w-[50%] max-sm:w-full  rounded-full"
+                        style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ">
+                        <div class="flex justify-center items-center text-center gap-5">
+                            <h4 id="cartSale" class="font-bold text-white text-center ">Your First step to Eating & Leaving Healthy</h4>
+                            <i class="fa-solid fa-face-smile text-white "></i>
+                        </div>
+                        <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>      
                     </div>
+                   <div id="cartItem" class="m-10 table-auto flex flex-col w-full p-5 justify-center items-center overflow-x-auto ">
+                        <!-- <div class=" mt-10 justify-center flex items-center text-center "
+                            style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
+                            <table class="w-full border-2 border-solid border-white rounded-3xl">
+                                <thead class="border-b">
+                                    <tr class="text-white font-bold ">
+                                        <td scope="col" class="border-r p-10">Remove</td>
+                                        <td scope="col" class="border-r p-10">Name</td>
+                                        <td scope="col" class="border-r p-10">Image</td>
+                                        <td scope="col" class="border-r p-10">Quantity</td>
+                                        <td scope="col" class="border-r p-10">Cost</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="border-r ">
+                                            <i class="fa-solid fa-trash text-white"></i>
+                                        </td>
+                                        <td class="border-r text-white">
+                                            <h6>Whole-Wheat</h6>
+                                        </td>
+                                        <td class="border-r justify-center items-center text-center">
+                                            <img src="./images/Whole-Wheat.png" alt="" class="border-solid border-2 border-white rounded-full w-[100px] h-[100px] justify-center">
+                                        </td>
+                                        <td class="border-r">
+                                            <div class="flex justify-center items-center mb-4 ">
+                                                <button id="decreaseQuantity" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-l">
+                                                    -
+                                                </button>
+                                                <input id="quantityInput" type="number" min="1" max="10" value="1" class="w-full px-2 py-1 justify-center items-center  text-center text-black">
+                                                <button id="increaseQuantity" class="bg-gray-300 text-gray-700 px-2 py-1 rounded-r">
+                                                    +
+                                                </button>
+                                                </div>
+                                        </td>
+                                        <td class="text-white">
+                                            <h6>$200</h6>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div> -->
+                   </div>
+                   <div class="justify-center items-center flex flex-col mx-10 w-[30rem] max-md:w-full max-sm:w-full p-10 border-solid border-2 border-white rounded-full"
+                        style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ">
+                        <span class="bg-white w-full h-1 justify-center items-center text-center"></span>
+                        <div class="flex justify-center gap-20 max-sm:flex-col">
+                            <h5 class="text-white font-bold mt-5">Total:</h5>
+                            <h5 id="total" class="text-white font-bold mt-5">$200</h5>
+                        </div>
+                   </div>
+
+                </div>
+            </div>
                 
         </section>
-
-
-        <section>
-            
-        </section>
-
 
 
         <section class="m-5 p-3 justify-center items-center text-center">
@@ -155,13 +184,9 @@
         </section >
     </section>
 
-
-
-    
-
-<script src="data.js"></script>
-<script src="swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
     <script>
         const menuIcon=document.querySelector(".menu-icon");
@@ -188,27 +213,6 @@
         quantityInput.value = parseInt(quantityInput.value) + 1;
       }
     });
-
-   
-
-    $(function () {
-    //     $('#charge').click(function () {
-    //     let newSrc = $(this).attr('src',items.image);
-    //     let newName = $(this).text(items.name);
-    //     let newDescription = $(this).text(items.description);
-
-    //     $('#mainImg').attr('src', newSrc);
-    //     $('#maiName').text(newName);
-    //     $('mainDescription').text(newDescription);
-    // })
-
-    $('#charge').click(function () {
-        $('#mainImg').attr('src','images/Bran-Flakes.png')
-    })
-  });
-
- 
-    
        
     </script>
     

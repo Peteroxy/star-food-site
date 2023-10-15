@@ -598,6 +598,14 @@ video {
   }
 }
 
+.motion{
+  white-space: nowrap;
+  animation:typing 3s steps(200, end);
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
 @keyframes typing {
   from {
     width: 0
@@ -648,6 +656,10 @@ video {
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -666,6 +678,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.m-10 {
+  margin: 2.5rem;
 }
 
 .m-2 {
@@ -792,6 +808,14 @@ video {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -804,6 +828,10 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -814,6 +842,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[10rem\] {
@@ -858,6 +890,10 @@ video {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-\[100px\] {
+  width: 100px;
 }
 
 .w-\[10rem\] {
@@ -918,6 +954,10 @@ video {
 
 .max-w-\[1330px\] {
   max-width: 1330px;
+}
+
+.table-auto {
+  table-layout: auto;
 }
 
 .transform {
@@ -988,6 +1028,14 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-\[2rem\] {
   border-radius: 2rem;
 }
@@ -1032,6 +1080,14 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
 }
 
 .border-solid {
@@ -1404,6 +1460,10 @@ body{
   .max-xl\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .max-xl\:text-\[20px\] {
+    font-size: 20px;
+  }
 }
 
 @media not all and (min-width: 1024px) {
@@ -1444,6 +1504,10 @@ body{
   .max-md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .max-md\:w-full {
+    width: 100%;
   }
 
   .max-md\:text-\[15px\] {
@@ -1489,16 +1553,20 @@ body{
     width: 15rem;
   }
 
-  .max-sm\:w-\[200px\] {
-    width: 200px;
-  }
-
   .max-sm\:w-\[270px\] {
     width: 270px;
   }
 
   .max-sm\:w-\[300px\] {
     width: 300px;
+  }
+
+  .max-sm\:w-\[40px\] {
+    width: 40px;
+  }
+
+  .max-sm\:w-\[50px\] {
+    width: 50px;
   }
 
   .max-sm\:w-full {
