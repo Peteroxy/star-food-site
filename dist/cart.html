@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="output.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <section id="cart.html">
@@ -17,19 +19,15 @@
                 <div class="flex mx-2 max-lg:hidden">
                     <ul class="flex justify-center gap-5 ">
                         <li ><a href="index.html" class="hover:text-red-300 transition duration-300">HOME</a></li>
-                        <li><a href="about.html" class="hover:text-red-300 transition duration-300">ABOUT US</a></li>
+                        <li><a href="#" class="hover:text-red-300 transition duration-300">ABOUT US</a></li>
                         <li><a href="products.html" class="hover:text-red-300 transition duration-300">PRODUCTS</a></li>
-                        <li><a href="#" class="hover:text-red-300 transition duration-300">CART</a></li>
+                        <li><a href="cart.html" class="hover:text-red-300 transition duration-300">CART</a></li>
                         <li><a href="contact.html" class="hover:text-red-300 transition duration-300">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class=" flex mx-2 gap-9  ">
                     <i class="fa fa-search hover:text-red-300 transition duration-300" aria-hidden="true"></i>
-                    
-                    <div class="flex cart">
-                        <i class="fa fa-shopping-cart hover:text-red-300 transition duration-300" aria-hidden="true"></i>
-                        <sup id="count" class="text-black">0</sup>
-                    </div>
+                    <i class="fa fa-shopping-cart hover:text-red-300 transition duration-300" aria-hidden="true"></i>
                     
                 </div>
                 <div class="hidden max-lg:block ">
@@ -58,7 +56,7 @@
                 <div class="flex flex-col mt-3 justify-center text-center items-center">
                     <h3 class=" font-bold text-[3rem] ">YOUR CART</h3>
                     <span class="bg-red-500 w-[15rem] h-1"></span>
-                    <P class="mt-5  text-[20px]" ><i>"Healthy Purchases Make Healthy Families"</i></P>
+                    <P  class="mt-5  text-[20px]" ><i>"Healthy Purchases Make Healthy Families"</i></P>
                 </div >
                 
                 <div class="m-3 p-3 mt-10 flex flex-col relative justify-center text-center items-center rounded-lg bg-cover bg-no-repeat w-full"
@@ -72,8 +70,8 @@
                         </div>
                         <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>      
                     </div>
-                   <div id="cartItem" class="m-10 table-auto flex flex-col w-full p-5 justify-center items-center overflow-x-auto ">
-                        <!-- <div class=" mt-10 justify-center flex items-center text-center "
+                   <div  class="m-10 table-auto flex flex-col w-full p-5 justify-center items-center overflow-x-auto ">
+                        <div class=" mt-10 justify-center flex items-center text-center "
                             style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
                             <table class="w-full border-2 border-solid border-white rounded-3xl">
                                 <thead class="border-b">
@@ -82,11 +80,12 @@
                                         <td scope="col" class="border-r p-10">Name</td>
                                         <td scope="col" class="border-r p-10">Image</td>
                                         <td scope="col" class="border-r p-10">Quantity</td>
+                                        <td scope="col" class="border-r p-10">Unit Price</td>
                                         <td scope="col" class="border-r p-10">Cost</td>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr class="border-b">
+                                <tbody id="cartItems">
+                                    <!-- <tr class="border-b">
                                         <td class="border-r ">
                                             <i class="fa-solid fa-trash text-white"></i>
                                         </td>
@@ -110,20 +109,20 @@
                                         <td class="text-white">
                                             <h6>$200</h6>
                                         </td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
 
-                        </div> -->
+                        </div>
                    </div>
-                   <div class="justify-center items-center flex flex-col mx-10 w-[30rem] max-md:w-full max-sm:w-full p-10 border-solid border-2 border-white rounded-full"
+                   <!-- <div class="justify-center items-center flex flex-col mx-10 w-[30rem] max-md:w-full max-sm:w-full p-10 border-solid border-2 border-white rounded-full"
                         style="background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ">
                         <span class="bg-white w-full h-1 justify-center items-center text-center"></span>
                         <div class="flex justify-center gap-20 max-sm:flex-col">
-                            <h5 class="text-white font-bold mt-5">Total:</h5>
-                            <h5 id="total" class="text-white font-bold mt-5">$200</h5>
+                            <h5 class="text-white font-bold mt-5">Total</h5>
+                            <h5 id="total" class="text-white font-bold mt-5">0</h5>
                         </div>
-                   </div>
+                   </div> -->
 
                 </div>
             </div>
@@ -184,10 +183,13 @@
         </section >
     </section>
 
-    <script src="data.js"></script>
+   
+
+   
+    
+    <script src="addtocart.js"></script>
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
     <script>
         const menuIcon=document.querySelector(".menu-icon");
         const menuItems=document.querySelector(".menu-items");
@@ -197,24 +199,151 @@
             
         });
 
-    const decreaseQuantityButton = document.getElementById('decreaseQuantity');
-    const increaseQuantityButton = document.getElementById('increaseQuantity');
-    const quantityInput = document.getElementById('quantityInput');
-    
+  
+// const counted = localStorage.getItem("dataToSend");
 
-    decreaseQuantityButton.addEventListener('click', () => {
-      if (parseInt(quantityInput.value) > 1) {
-        quantityInput.value = parseInt(quantityInput.value) - 1;
-      }
-    });
+// if (counted) {
+  
+//   document.getElementById("count").innerHTML = counted;
 
-    increaseQuantityButton.addEventListener('click', () => {
-      if (parseInt(quantityInput.value) < 10) {
-        quantityInput.value = parseInt(quantityInput.value) + 1;
-      }
+// }
+
+
+
+var itemDetails = localStorage.getItem("itemDetails");
+
+if (itemDetails) {
+    var cart = JSON.parse(itemDetails);
+
+    cart.forEach(function(item, index) {
+        var cartItem = document.createElement("tr");
+        cartItem.id = "cartItem";
+        cartItem.className = "border-b";
+
+        var innerHTML = `
+        <tr class="">
+            <td class="border-r">
+                <i onclick="removeItem(${index})" class="fa-solid fa-trash text-white"></i>
+            </td>
+            <td class="border-r text-white">
+                <h6>${item.name}</h6>
+            </td>
+            <td class="border-r justify-center items-center text-center">
+                <img src="${item.image}" alt="" class="border-solid border-2 border-white rounded-full w-[100px] h-[100px] justify-center">
+            </td>
+            <td class="border-r">
+                <div class="flex justify-center items-center mb-4">
+                    <button id='decreaseQuantity${index}' class="bg-gray-300 text-gray-700 px-2 py-1 rounded-l">
+                        -
+                    </button>
+                    <input id="quantityInput${index}" type="number" min="1" max="10" value="1" class="w-full px-2 py-1 justify-center items-center text-center text-black">
+                    <button id='increaseQuantity${index}' class="bg-gray-300 text-gray-700 px-2 py-1 rounded-r">
+                        +
+                    </button>
+                </div>
+            </td>
+            <td class="border-r text-white">
+                <h6>${item.price}</h6>
+            </td>
+            <td class="border-r text-white">
+                <h6 id="cost${index}">${item.price}</h6>
+            </td>
+         </tr>
+        `;
+
+        cartItem.innerHTML = innerHTML;
+        document.getElementById("cartItems").appendChild(cartItem);
+
+        // Set up event listeners for quantity buttons inside the forEach loop
+        var decreaseQuantityButton = document.getElementById('decreaseQuantity' + index);
+        var increaseQuantityButton = document.getElementById('increaseQuantity' + index);
+        var quantityInput = document.getElementById('quantityInput' + index);
+
+        decreaseQuantityButton.addEventListener('click', () => {
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+                updateTotalCost(index);
+            }
+            
+        });
+
+        increaseQuantityButton.addEventListener('click', () => {
+            if (parseInt(quantityInput.value) < 10) {
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+                updateTotalCost(index);
+            }
+            
+        });
     });
-       
-    </script>
+}
+
+
+function removeItem(index) {
+    var cart = JSON.parse(localStorage.getItem("itemDetails"));
+    cart.splice(index, 1);
+    localStorage.setItem("itemDetails", JSON.stringify(cart));
+
+    var cartItems = document.getElementById("cartItems");
+    var childElement = cartItems.childNodes[index];
+    if (childElement) {
+        cartItems.removeChild(childElement);
+    }
+
+    // After removing the item, update the total cost
     
+}
+
+
+
+
+function updateTotalCost(index) {
+    var quantityInput = document.getElementById('quantityInput' + index);
+    var item = cart[index];
+    var totalCostElement = document.getElementById('cost' + index);
+
+    if (quantityInput && item && totalCostElement) {
+        var quantity = parseInt(quantityInput.value);
+        var totalCost = item.price * quantity;
+        totalCostElement.textContent = totalCost;
+    }
+     
+}
+
+
+
+
+
+
+
+// function calculateTotalCost() {
+//     var totalCost = 0;
+//     var index = 0;
+//     var totalCostElement;
+
+    
+//     while ((totalCostElement = document.getElementById('cost' + index)) !== null) {
+//         totalCost += parseFloat(totalCostElement.textContent) || 0;
+//         index++;
+//     }
+
+    
+//     var totalElement = document.getElementById("total");
+//     if (totalElement) {
+//         totalElement.textContent = totalCost;
+//     }
+
+    
+//     if (index === 0) {
+//         totalElement.textContent = "0";
+//     }
+// }
+
+// ;
+
+  
+    
+    
+    </script> 
 </body>
+
 </html>
