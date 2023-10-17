@@ -70,10 +70,10 @@ const products = [
   // Template string for the search modal
 const searchModalTemplate = `
 <div id="searchModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-<div class="absolute inset-0 bg-black opacity-50"></div>
-<div class="bg-white p-4 rounded-lg shadow-lg z-10 w-full max-w-md">
+<div class="absolute justify-center items-center inset-0 bg-black opacity-50"></div>
+<div class="bg-white p-4 rounded-lg  shadow-lg z-10 w-full max-w-md">
   <div class="flex items-center justify-between mb-4">
-    <input id="searchInput" type="text" placeholder="Search products..." 
+    <input id="searchInput" required type="text" placeholder="Search products..." 
     class="w-full p-2 rounded-l-lg border border-gray-300 focus:outline-none focus:ring focus:border-red-400">
   `
   +
@@ -100,10 +100,22 @@ const searchModalTemplate = `
     } else {
       results.forEach(product => {
         const listItem = document.createElement('li');
-        listItem.innerHTML = `
-          <p><strong>${product.name}</strong></p>
-          <p>${product.description}</p>
-        `;
+        listItem.innerHTML =
+        `
+        <div  id="mappedItems" class=" mappedDiv group w-full h-[500px] max-sm:flex-col justify-center   flex flex-col rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent items-center group group-hover:text-white border-solid  border-white"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
+            <h4 class="font-bold text-center text-white mt-10">${product.name}</h4>
+            <span class="bg-red-500 w-[5rem] h-2 justify-center items-center text-center"></span>
+            <img id="small" src=${product.image} alt="oatmeal" class="small-img w-[15rem] ">
+                   
+            <p id='charge'  class=' mt-5 text-white p-2 font-bold w-full  text-[14px]'>${product.description}</p>
+       
+           
+        </div>`
+        // `
+        //   <p><strong>${product.name}</strong></p>
+        //   <p>${product.description}</p>
+        // `;
         searchResults.appendChild(listItem);
       });
     }
@@ -123,7 +135,11 @@ const searchModalTemplate = `
   // Function to perform the search
 function searchItems(){
       
-    const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+  const searchQuery = document.getElementById('searchInput').value.toLowerCase();
+  if (searchQuery.trim() === '') {
+    // Input is empty, do not perform a search
+    return;
+}
     const searchResults = products.filter(product => product.name.toLowerCase().includes(searchQuery));
     displaySearchResults(searchResults);
   };

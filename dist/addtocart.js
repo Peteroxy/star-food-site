@@ -117,6 +117,7 @@ function addtocart(item) {
     itemDetails.image = matchedItem.image;
     itemDetails.name = matchedItem.name;
     itemDetails.price = matchedItem.price;
+    alert("added to Cart! check the cart page")
    
   }
   
