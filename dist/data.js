@@ -49,6 +49,46 @@ const product = [
     },
     {
         id: 6,
+        category:'cereals',
+        image: 'images/Barley.png',
+        name: 'Barley',
+        price: 220,
+        description:"Nutritious ancient grain packed with fiber and essential minerals, known for its versatility in soups, salads, and pilafs."
+    },
+    {
+        id: 7,
+        category:'cereals',
+        image: 'images/Buckwheat.png',
+        name: 'Buck-Wheat',
+        price: 250,
+        description:"Nutrient-rich pseudo-cereal with a distinct nutty flavor, gluten-free, and a great source of protein and dietary fiber."
+    },
+    {
+        id: 8,
+        category:'cereals',
+        image: 'images/Farro.png',
+        name: 'Farro',
+        price: 240,
+        description:"Hearty ancient wheat grain with a chewy texture, rich in vitamins and minerals, commonly used in salads, soups, and risottos."
+    },
+    {
+        id: 9,
+        category:'cereals',
+        image: 'images/Millet-Cereal.png',
+        name: 'Millet',
+        price: 240,
+        description:"Small grain with a mild, nutty flavor, gluten-free, and rich in antioxidants, fiber, and minerals, often used in porridges and baked goods."
+    },
+    {
+        id: 10,
+        category:'cereals',
+        image: 'images/Spelt.png',
+        name: 'Spelt',
+        price: 300,
+        description:"Nutty-flavored ancient grain, a distant relative of wheat, rich in protein, fiber, and B-vitamins, commonly used in bread and pasta recipes."
+    },
+    {
+        id: 11,
         category:'protein',
         image: 'images/Granola.png',
         name: 'Granola',
@@ -56,12 +96,140 @@ const product = [
         description:"Indulge in our protein-rich organic granola, crafted with wholesome ingredients like nuts, seeds, and grains, for a satisfying and nourishing snack or breakfast option."
     },
     {
-        id: 7,
+        id: 12,
         category:'protein',
         image: 'images/Quinoa.png',
         name: 'Quinoa',
         price: 250,
         description:"Savor the nutritional powerhouse of our organic quinoa, a protein-rich grain that offers a complete amino acid profile, making it a versatile and wholesome addition to your meals."
+    },
+    {
+        id: 13,
+        category:'protein',
+        image: 'images/pork.png',
+        name: 'Pork',
+        price: 110,
+        description:"Versatile meat option, known for its rich flavor and tenderness, providing a good source of protein, vitamins, and minerals."
+    },
+    {
+        id: 14,
+        category:'protein',
+        image: 'images/Almonds.png',
+        name: 'Almonds',
+        price: 150,
+        description:"Nutritional powerhouse packed with healthy fats, fiber, antioxidants, and vitamin E, promoting heart health and providing a satisfying crunch."
+    },
+    {
+        id: 15,
+        category:'protein',
+        image: 'images/Boiled-egg.png',
+        name: 'Egg',
+        price: 170,
+        description:"Nutrient-dense food, packed with high-quality protein, vitamins, and minerals, versatile in cooking and essential for various culinary preparations."
+    },
+    {
+        id: 16,
+        category:'protein',
+        image: 'images/Beefe.png',
+        name: 'Beef',
+        price: 300,
+        description:" Protein-rich meat option, offering essential nutrients like iron, zinc, and B-vitamins, contributing to muscle growth and overall health."
+    },
+    {
+        id: 17,
+        category:'protein',
+        image: 'images/Chicken.png',
+        name: 'Chicken',
+        price: 340,
+        description:"Lean poultry choice, low in fat and high in protein, supplying essential amino acids, vitamins, and minerals for muscle growth and repair."
+    },
+    {
+        id: 18,
+        category:'protein',
+        image: 'images/Lentils.png',
+        name: 'Lentils',
+        price: 330,
+        description:"Protein-packed legumes, rich in fiber, folate, and iron, providing a versatile and nutritious ingredient for soups, stews, and salads."
+    },
+    {
+        id: 19,
+        category:'protein',
+        image: 'images/Salmon.png',
+        name: 'Salmon',
+        price: 300,
+        description:"Fatty fish renowned for its omega-3 fatty acids, promoting heart health, and providing a rich source of high-quality protein."
+    },
+    {
+        id: 20,
+        category:'protein',
+        image: 'images/Tofu.png',
+        name: 'Tofu',
+        price: 160,
+        description:"Soy-based protein alternative, low in fat and cholesterol-free, offering a versatile option for vegetarian and vegan dishes."
+    },
+    {
+        id: 21,
+        category:'spices',
+        image: 'images/nutmeg.png',
+        name: 'Nutmeg',
+        price: 180,
+        description:"Fragrant spice with a warm, sweet flavor, adding depth to both sweet and savory dishes, known for its potential health benefit"
+    },
+    {
+        id: 22,
+        category:'spices',
+        image: 'images/Cinnamon.png',
+        name: 'Cinnamon',
+        price: 140,
+        description:"Aromatic spice with a sweet and warm taste, boasting antioxidant properties and potential health benefits, commonly used in baking and cooking."
+    },
+    {
+        id: 23,
+        category:'spices',
+        image: 'images/Cumin.png',
+        name: 'Cumin',
+        price: 190,
+        description:"Earthy spice with a distinct aroma, adding depth and warmth to various cuisines, known for its digestive and anti-inflammatory properties."
+    },
+    {
+        id: 24,
+        category:'spices',
+        image: 'images/Oregano.png',
+        name: 'Oregano',
+        price: 200,
+        description:"Fragrant herb with a robust flavor, commonly used in Mediterranean cuisine, providing antioxidants and potential antimicrobial properties."
+    },
+    {
+        id: 25,
+        category:'spices',
+        image: 'images/Paprika.png',
+        name: 'Paprica',
+        price: 220,
+        description:"Vibrant spice derived from dried red peppers, adding a smoky and slightly sweet flavor to dishes, rich in antioxidants and vitamin C."
+    },
+    {
+        id: 26,
+        category:'spices',
+        image: 'images/Rosemary.png',
+        name: 'RoseMary',
+        price: 250,
+        description:"Aromatic herb with a pine-like fragrance, adding a unique flavor to savory dishes, known for its potential cognitive and digestive benefits."
+    },
+    {
+        id: 27,
+        category:'spices',
+        image: 'images/Thyme.png',
+        name: 'Thyme',
+        price: 100,
+        description:"Fragrant herb with a subtle lemony flavor, enhancing the taste of various dishes, and believed to have antibacterial properties."
+    },
+    {
+        id: 28,
+        category:'spices',
+        image: 'images/Turmeric.png',
+        name: 'Tumeric',
+        price: 180,
+        description:"Golden spice with a warm, earthy flavor, containing curcumin, a compound with potential anti-inflammatory and antioxidant properties."
     },
 
 ];
@@ -72,81 +240,10 @@ let cerealsProduct = product.filter(function (items) {
     {return items}; 
 })
 
-// let mainDivContent = cerealsProduct.filter(function (single) {
-//     return single.id === 0
-// })
 
 
 
 let i = 0;
-// document.getElementById('mainDiv').innerHTML = mainDivContent.map((items) => {
-//     var { image,name,description,price } = items;
-//     return (
-    
-
-
-//         `<div  class="px-5  mt-10 max-sm:px-0 w-full flex gap-5 max-lg:flex-col rounded-[3rem] justify-center items-center ">
-//         <div  class="w-[400px] mt-3  h-[500px] max-sm:w-full justify-center items-center text-center flex flex-col  shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent rounded-[3rem]"
-//         style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
-//         <div class="object-contain mt-50">
-//             <img id="mainImg" src=${image} alt="" class="rounded-full object-cover">
-//         </div>
-//         <div class="mt-10 ">
-//         <button id="mainPrice" class=" mt-5 text-white bg-red-400 p-2 font-bold w-[10rem] rounded-full text-[14px] transition ease-in-out duration-3000 delay-1000">$ ${price}</button>
-//         </div>
-//     </div>
-
-//     <div  class="w-[400px] mt-3 h-[500px] max-sm:w-full  justify-center items-center text-center rounded-[3rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent "
-//             style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
-//             <div class="group flex flex-col justify-center items-center text-center">
-//                 <h2 id="mainName" class="font-bold text-white text-[20px] mt-3 group-hover:text-red-400">${name}</h2>
-//                 <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>
-//             </div>
-//             <div class="flex mt-10 justify-center items-center text-center">
-//                 <p class="text-red-400"><i class="fa-solid fa-star"></i></p>
-//                 <p class="text-red-400"><i class="fa-solid fa-star"></i></p>
-//                 <p class="text-red-400"><i class="fa-solid fa-star"></i></p>
-//                 <p class="text-red-400"><i class="fa-solid fa-star"></i></p>
-//                 <p class="text-red-400"><i class="fa-solid fa-star"></i></p>
-//             </div>
-//             <div class=" text-white p-10 max-sm:p-0 w-full h-full  justify-center items-center text-center  ">
-//                 <p id="mainDescription" class="leading-12 text-[25px] max-xl:text-[20px] max-sm:text-[18px]"><i>"
-//                     <br>${description}
-//                     <br>
-//                     "</i></p>
-//             </div>
-            
-//         </div>
-        
-//     </div>`
-        
-        
-//     )
-// }).join('')
-
-
-
-// document.getElementById('motion').innerHTML = product.map((items) =>
-// {
-//     var {image, id,name,price,description} = items;
-//     return (
-//         `
-//         <div  id="mappedItems" class=" mappedDiv group swiper-slide w-[200px] h-[500px] max-sm:w-[50px] max-sm:flex-col justify-center flex flex-col rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent items-center group group-hover:text-white border-solid  border-white"
-//           style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
-//             <h4 class="font-bold text-center text-white mt-10">${name}</h4>
-//             <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>
-//             <img id="small" src=${image} alt="oatmeal" class="small-img w-[15rem]  mt-24  ">
-                   
-//             <p id='charge' onClick='logger("${image}","${name}","${price}","${description}")' class=' mt-5 text-black bg-white p-2 font-bold w-[10rem] rounded-full text-[14px] invisible group-hover:visible transition ease-in-out duration-3000 delay-1000'>View Details</p>`+
-       
-//         "<p onclick='addtocart("+JSON.stringify(items)+")' class=' mt-5 text-white bg-red-400 p-2 font-bold w-[10rem] rounded-full text-[14px] '>Add to cart</p>"+
-//        ` </div>`
-//     )
-    
-// }).join('')
-
-
-
 
 
 document.getElementById('motion').innerHTML = cerealsProduct.map((items) =>
@@ -169,8 +266,62 @@ document.getElementById('motion').innerHTML = cerealsProduct.map((items) =>
 }).join('')
 
 
+let proteinProduct = product.filter(function (items) { 
+    return items.category === "protein"; 
+}).map(function (items) { 
+    {return items}; 
+})
 
-// ... Your existing code ...
+
+document.getElementById('motion2').innerHTML = proteinProduct.map((items) =>
+{
+    var {image, id,name,price,description} = items;
+    return (
+        `
+        <div  id="mappedItems" class=" mappedDiv group swiper-slide w-[200px] h-[500px] max-sm:w-[50px] max-sm:flex-col justify-center flex flex-col rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent items-center group group-hover:text-white border-solid  border-white"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
+            <h4 class="font-bold text-center text-white mt-10">${name}</h4>
+            <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>
+            <img id="small" src=${image} alt="oatmeal" class="small-img w-[15rem]  mt-24  ">
+                   
+            <p id='charge' onClick='logger("${image}","${name}","${price}","${description}")' class=' mt-5 text-black bg-white p-2 font-bold w-[10rem] rounded-full text-[14px] invisible group-hover:visible transition ease-in-out duration-3000 delay-1000'>View Details</p>`+
+       
+            "<p onclick='addtocart("+JSON.stringify(items)+")'  class=' mt-5 text-white bg-red-400 p-2 font-bold w-[10rem] rounded-full text-[14px] '>Add to cart</p>"+
+       ` </div>`
+    )
+    
+}).join('')
+
+
+let spicesProduct = product.filter(function (items) { 
+    return items.category === "spices"; 
+}).map(function (items) { 
+    {return items}; 
+})
+
+
+document.getElementById('motion3').innerHTML = spicesProduct.map((items) =>
+{
+    var {image, id,name,price,description} = items;
+    return (
+        `
+        <div  id="mappedItems" class=" mappedDiv group swiper-slide w-[200px] h-[500px] max-sm:w-[50px] max-sm:flex-col justify-center flex flex-col rounded-[2rem] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] bg-transparent items-center group group-hover:text-white border-solid  border-white"
+          style="background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5))">
+            <h4 class="font-bold text-center text-white mt-10">${name}</h4>
+            <span class="bg-red-500 w-[5rem] h-1 justify-center items-center text-center"></span>
+            <img id="small" src=${image} alt="oatmeal" class="small-img w-[15rem]  mt-24  ">
+                   
+            <p id='charge' onClick='logger("${image}","${name}","${price}","${description}")' class=' mt-5 text-black bg-white p-2 font-bold w-[10rem] rounded-full text-[14px] invisible group-hover:visible transition ease-in-out duration-3000 delay-1000'>View Details</p>`+
+       
+            "<p onclick='addtocart("+JSON.stringify(items)+")'  class=' mt-5 text-white bg-red-400 p-2 font-bold w-[10rem] rounded-full text-[14px] '>Add to cart</p>"+
+       ` </div>`
+    )
+    
+}).join('')
+
+
+
+
 
 let mainDivContent = cerealsProduct.filter(function (single) {
     return single.id === 0
@@ -179,7 +330,7 @@ let mainDivContent = cerealsProduct.filter(function (single) {
 function createModal() {
     const modal = document.createElement("div");
     modal.id = "myModal";
-    modal.classList.add("inset-0", "z-50", "hidden","flex","fixed", "px-5", "mt-[-50rem]", "max-sm:px-0", "w-full", "gap-5", "max-lg:flex-col", "rounded-[3rem]", "justify-center", "items-center");
+    modal.classList.add("inset-0", "z-50", "hidden","flex","fixed", "px-5", "mt-10", "max-sm:px-0", "w-full", "gap-5", "max-lg:flex-col", "rounded-[3rem]", "justify-center", "items-center");
     modal.innerHTML = mainDivContent.map((items) => {
         var { image, name, description, price } = items;
         return `
