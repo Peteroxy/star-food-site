@@ -262,7 +262,225 @@ function addtocart(item) {
       name: 'Tumeric',
       price: 180,
       description:"Golden spice with a warm, earthy flavor, containing curcumin, a compound with potential anti-inflammatory and antioxidant properties."
-  },
+      },
+      {
+        id: 29,
+        category:'fruits',
+        image: 'images/apple.png',
+        name: 'Apple',
+        price: 100,
+        description:"Crisp and versatile, apples are sweet-tart fruits packed with fiber, perfect for snacking or adding to both sweet and savory dishes."
+    },
+    {
+        id: 30,
+        category:'fruits',
+        image: 'images/banana.jpg',
+        name: 'Banana',
+        price: 140,
+        description:"Nutritious and energizing, bananas are potassium-rich fruits with a convenient peel, ideal for on-the-go snacking and adding to smoothies or baked goods."
+    },
+    {
+        id: 31,
+        category:'fruits',
+        image: 'images/cherries.jpg',
+        name: 'Cherries',
+        price: 170,
+        description:"Bursting with flavor, cherries are antioxidant-packed stone fruits that bring a delightful balance of sweetness and tartness to your palate."
+    },
+    {
+        id: 32,
+        category:'fruits',
+        image: 'images/grape.png',
+        name: 'Grape',
+        price: 200,
+        description:" Juicy and bite-sized, grapes come in various colors and flavors, offering hydration, antioxidants, and vitamins for a refreshing snack or addition to salads and juices."
+    },
+    {
+        id: 33,
+        category:'fruits',
+        image: 'images/mango.png',
+        name: 'Mango',
+        price: 220,
+        description:"The tropical 'king of fruits,' mangoes have a luscious, aromatic flavor, providing a dose of vitamins, fiber, and antioxidants for a refreshing addition to smoothies, salsas, and desserts."
+    },
+    {
+        id: 34,
+        category:'fruits',
+        image: 'images/orange.jpg',
+        name: 'Orange',
+        price: 190,
+        description:"Tangy and vibrant, oranges are citrus fruits rich in vitamin C and nutrients, offering a refreshing juice and versatility in both sweet and savory recipes."
+    },
+    {
+        id: 35,
+        category:'fruits',
+        image: 'images/pineapple.png',
+        name: 'Pineapple',
+        price: 250,
+        description:"Tropical and juicy, pineapples bring a sweet and tangy flavor with a dose of vitamins and enzymes, perfect for snacking, salads, and tropical-inspired dishes."
+    },
+    {
+        id: 36,
+        category:'fruits',
+        image: 'images/strawberries.jpg',
+        name: 'Strawberries',
+        price: 220,
+        description:"Bright and sweet, strawberries are antioxidant-rich fruits that make a refreshing snack, addition to salads, or a delicious topping for desserts and breakfast dishes."
+    },
+    {
+        id: 37,
+        category:'fruits',
+        image: 'images/water-melon.png',
+        name: 'Water Melon',
+        price: 250,
+        description:"Refreshing and hydrating, watermelon is a juicy fruit that quenches your thirst and offers a burst of vitamins, making it a perfect summertime treat."
+      },
+      {
+        id: 38,
+        category:'oils',
+        image: 'images/coconut-oil.jpg',
+        name: 'Coconut Oil',
+        price: 400,
+        description:"Extracted from the meat of mature coconuts, coconut oil is a popular choice known for its distinct tropical aroma and flavor, as well as its various culinary and beauty applications."
+    },
+    {
+        id: 39,
+        category:'oils',
+        image: 'images/olive-oil.png',
+        name: 'Olive Oil',
+        price: 420,
+        description:"Renowned for its health benefits and culinary versatility, olive oil is derived from the fruit of olive trees and comes in different varieties such as extra virgin, virgin, and regular olive oil."
+    },
+    {
+        id: 40,
+        category:'oils',
+        image: 'images/canola-oil.png',
+        name: 'Canola Oil',
+        price: 430,
+        description:"Derived from the seeds of the canola plant, canola oil is known for its mild flavor, high smoking point, and heart-healthy monounsaturated fats."
+    },
+    {
+        id: 41,
+        category:'oils',
+        image: 'images/sunflower-oil.png',
+        name: 'Sunflower Oil',
+        price: 450,
+        description:"Extracted from sunflower seeds, sunflower oil is a light and neutral-tasting oil that is commonly used for cooking, frying, and baking."
+    },
+    {
+        id: 42,
+        category:'oils',
+        image: 'images/soya-bean-oil.jpg',
+        name: 'Soyabean Oil',
+        price: 470,
+        description:"Produced from soybeans, soybean oil is a widely used cooking oil due to its neutral flavor, affordability, and high smoke point."
+    },
+    {
+        id: 43,
+        category:'oils',
+        image: 'images/avocado-oil.png',
+        name: 'Avogado Oil',
+        price: 500,
+        description:"Cold-pressed from the flesh of avocados, avocado oil is prized for its high monounsaturated fat content, creamy texture, and mild flavor."
+    },
+    {
+        id: 44,
+        category:'oils',
+        image: 'images/sesame-oil.png',
+        name: 'Sesame Oil',
+        price: 460,
+        description:"Derived from sesame seeds, sesame oil is characterized by its distinct nutty flavor and is often used in Asian cuisines for stir-frying and as a flavor enhancer."
+    },
+    {
+        id: 45,
+        category:'oils',
+        image: 'images/grape-oil.png',
+        name: 'Grape-Seed Oil',
+        price: 470,
+        description:"Extracted from the seeds of grapes, grapeseed oil is a light, neutral-tasting oil that is commonly used in cooking, baking, and salad dressings."
+    },
+    {
+        id: 46,
+        category:'oils',
+        image: 'images/corn-oil.png',
+        name: 'Corn Oil',
+        price: 490,
+        description:"Made from the germ of corn kernels, corn oil is a popular cooking oil known for its mild flavor and versatility in various culinary applications."
+      },
+      {
+        id: 47,
+        category:'flours',
+        image: 'images/wheat-flour.png',
+        name: 'Wheat Flour',
+        price: 90,
+        description:"Made from the entire wheat kernel, whole wheat flour is higher in fiber, vitamins, and minerals compared to refined flours."
+    },
+    {
+        id: 48,
+        category:'flours',
+        image: 'images/almond-flour.png',
+        name: 'Almond Flour',
+        price: 120,
+        description:"Ground from blanched almonds, almond flour is a popular gluten-free alternative with a nutty flavor and moist texture."
+    },
+    {
+        id: 49,
+        category:'flours',
+        image: 'images/coconut-flour.jpg',
+        name: 'Coconut Flour',
+        price: 110,
+        description:"Made from dried and ground coconut meat, coconut flour is a gluten-free option rich in fiber and adds a subtle coconut flavor to baked goods."
+    },
+    {
+        id: 50,
+        category:'flours',
+        image: 'images/rice-flour.png',
+        name: 'Rice Flour',
+        price: 110,
+        description:"Milled from ground rice grains, rice flour is a staple in many Asian cuisines and is often used in gluten-free baking, as well as thickening sauces and coatings."
+    },
+    {
+        id: 51,
+        category:'flours',
+        image: 'images/spelt-flour.png',
+        name: 'Spelt Flour',
+        price: 180,
+        description:"An ancient grain flour that has a nutty flavor and is lower in gluten compared to modern wheat, making it a potential alternative for those with mild gluten sensitivities."
+    },
+    {
+        id: 52,
+        category:'flours',
+        image: 'images/quinoa-flour.png',
+        name: 'Quinoa Flour',
+        price: 180,
+        description:"An ancient grain flour that has a nutty flavor and is lower in gluten compared to modern wheat, making it a potential alternative for those with mild gluten sensitivities."
+    },
+    {
+        id: 53,
+        category:'flours',
+        image: 'images/semolina-flour.png',
+        name: 'Semolina Flour',
+        price: 190,
+        description:"Commonly used in pasta-making, semolina flour adds a firm and chewy texture. It can also be used in breads and desserts."
+    },
+    {
+        id: 54,
+        category:'flours',
+        image: 'images/pastry-flour.png',
+        name: 'Pastry Flour',
+        price: 150,
+        description:"Ideal for delicate baked goods like pastries, pie crusts, and cookies, pastry flour produces tender and flaky results."
+    },
+    {
+        id: 55,
+        category:'flours',
+        image: 'images/oat-flour.png',
+        name: 'Oat Flour',
+        price: 195,
+        description:"A versatile gluten-free option, oat flour adds a subtle nutty flavor and moist texture to pancakes, cookies, muffins, and breads."
+    }
+
+
 
 ];
 

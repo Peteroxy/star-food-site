@@ -3,7 +3,7 @@ const products = [
       id: 0,
       category:'cereals',
       image: 'images/Cornflakes.png',
-      name: 'Cornflakes',
+      name: 'Cornflakes Cereals',
       price: 120,
       description:"Indulge in our organic cornflakes, crafted from sustainably sourced corn for a crisp and nutritious breakfast experience that satisfies."
   },
@@ -11,7 +11,7 @@ const products = [
       id: 1,
       category:'cereals',
       image: 'images/Bran-Flakes.png',
-      name: 'Bran-Flakes',
+      name: 'Bran-Flakes Cereals',
       price: 140,
       description:"Savor the goodness of our organic bran flakes, made from wholesome ingredients and rich in fiber, vitamins, and minerals for a nourishing start to your day."
   },
@@ -19,7 +19,7 @@ const products = [
       id: 2,
       category:'cereals',
       image: 'images/oatmeal.png',
-      name: 'Oatmeal',
+      name: 'Oatmeal Cereals',
       price: 130,
       description:"Our organic oatmeal cereal offers a wholesome and nourishing breakfast option, packed with fiber, vitamins, and minerals."
   },
@@ -27,7 +27,7 @@ const products = [
       id: 3,
       category:'cereals',
       image: 'images/Puffed-Rice.png',
-      name: 'Puffed-Rice',
+      name: 'Puffed-Rice Cereals',
       price: 150,
       description:"Enjoy the light and crispy delight of our organic puffed rice cereal, made from whole grains and packed with a satisfying crunch and natural goodness."
   },
@@ -35,7 +35,7 @@ const products = [
       id: 4,
       category:'cereals',
       image: 'images/Salt-Muesli.png',
-      name: 'Salt-Muesli',
+      name: 'Salt-Muesli Cereals',
       price: 200,
       description:"Discover the perfect balance of flavors in our organic salt muesli, combining wholesome grains, nuts, seeds, and a touch of salt for a savory and nutritious breakfast option."
   },
@@ -43,7 +43,7 @@ const products = [
       id: 5,
       category:'cereals',
       image: 'images/Whole-Wheat.png',
-      name: 'Whole-Wheat',
+      name: 'Whole-Wheat Cereals',
       price: 200,
       description:"Experience the wholesome goodness of our organic whole wheat cereal, made from nutrient-rich whole grains, providing a hearty and nutritious start to your day."
   },
@@ -51,7 +51,7 @@ const products = [
       id: 6,
       category:'cereals',
       image: 'images/Barley.png',
-      name: 'Barley',
+      name: 'Barley Cereals',
       price: 220,
       description:"Nutritious ancient grain packed with fiber and essential minerals, known for its versatility in soups, salads, and pilafs."
   },
@@ -59,7 +59,7 @@ const products = [
       id: 7,
       category:'cereals',
       image: 'images/Buckwheat.png',
-      name: 'Buck-Wheat',
+      name: 'Buck-Wheat Cereals',
       price: 250,
       description:"Nutrient-rich pseudo-cereal with a distinct nutty flavor, gluten-free, and a great source of protein and dietary fiber."
   },
@@ -67,7 +67,7 @@ const products = [
       id: 8,
       category:'cereals',
       image: 'images/Farro.png',
-      name: 'Farro',
+      name: 'Farro Cereals',
       price: 240,
       description:"Hearty ancient wheat grain with a chewy texture, rich in vitamins and minerals, commonly used in salads, soups, and risottos."
   },
@@ -75,7 +75,7 @@ const products = [
       id: 9,
       category:'cereals',
       image: 'images/Millet-Cereal.png',
-      name: 'Millet',
+      name: 'Millet Cereals',
       price: 240,
       description:"Small grain with a mild, nutty flavor, gluten-free, and rich in antioxidants, fiber, and minerals, often used in porridges and baked goods."
   },
@@ -83,7 +83,7 @@ const products = [
       id: 10,
       category:'cereals',
       image: 'images/Spelt.png',
-      name: 'Spelt',
+      name: 'Spelt Cereals',
       price: 300,
       description:"Nutty-flavored ancient grain, a distant relative of wheat, rich in protein, fiber, and B-vitamins, commonly used in bread and pasta recipes."
   },
@@ -230,14 +230,231 @@ const products = [
     name: 'Tumeric',
     price: 180,
     description:"Golden spice with a warm, earthy flavor, containing curcumin, a compound with potential anti-inflammatory and antioxidant properties."
+  },
+  {
+    id: 29,
+    category:'fruits',
+    image: 'images/apple.png',
+    name: 'Apple',
+    price: 100,
+    description:"Crisp and versatile, apples are sweet-tart fruits packed with fiber, perfect for snacking or adding to both sweet and savory dishes."
 },
+{
+    id: 30,
+    category:'fruits',
+    image: 'images/banana.jpg',
+    name: 'Banana',
+    price: 140,
+    description:"Nutritious and energizing, bananas are potassium-rich fruits with a convenient peel, ideal for on-the-go snacking and adding to smoothies or baked goods."
+},
+{
+    id: 31,
+    category:'fruits',
+    image: 'images/cherries.jpg',
+    name: 'Cherries',
+    price: 170,
+    description:"Bursting with flavor, cherries are antioxidant-packed stone fruits that bring a delightful balance of sweetness and tartness to your palate."
+},
+{
+    id: 32,
+    category:'fruits',
+    image: 'images/grape.png',
+    name: 'Grape',
+    price: 200,
+    description:" Juicy and bite-sized, grapes come in various colors and flavors, offering hydration, antioxidants, and vitamins for a refreshing snack or addition to salads and juices."
+},
+{
+    id: 33,
+    category:'fruits',
+    image: 'images/mango.png',
+    name: 'Mango',
+    price: 220,
+    description:"The tropical 'king of fruits,' mangoes have a luscious, aromatic flavor, providing a dose of vitamins, fiber, and antioxidants for a refreshing addition to smoothies, salsas, and desserts."
+},
+{
+    id: 34,
+    category:'fruits',
+    image: 'images/orange.jpg',
+    name: 'Orange',
+    price: 190,
+    description:"Tangy and vibrant, oranges are citrus fruits rich in vitamin C and nutrients, offering a refreshing juice and versatility in both sweet and savory recipes."
+},
+{
+    id: 35,
+    category:'fruits',
+    image: 'images/pineapple.png',
+    name: 'Pineapple',
+    price: 250,
+    description:"Tropical and juicy, pineapples bring a sweet and tangy flavor with a dose of vitamins and enzymes, perfect for snacking, salads, and tropical-inspired dishes."
+},
+{
+    id: 36,
+    category:'fruits',
+    image: 'images/strawberries.jpg',
+    name: 'Strawberries',
+    price: 220,
+    description:"Bright and sweet, strawberries are antioxidant-rich fruits that make a refreshing snack, addition to salads, or a delicious topping for desserts and breakfast dishes."
+},
+{
+    id: 37,
+    category:'fruits',
+    image: 'images/water-melon.png',
+    name: 'Water Melon',
+    price: 250,
+    description:"Refreshing and hydrating, watermelon is a juicy fruit that quenches your thirst and offers a burst of vitamins, making it a perfect summertime treat."
+},
+{
+  id: 38,
+  category:'oils',
+  image: 'images/coconut-oil.jpg',
+  name: 'Coconut Oil',
+  price: 400,
+  description:"Extracted from the meat of mature coconuts, coconut oil is a popular choice known for its distinct tropical aroma and flavor, as well as its various culinary and beauty applications."
+},
+{
+  id: 39,
+  category:'oils',
+  image: 'images/olive-oil.png',
+  name: 'Olive Oil',
+  price: 420,
+  description:"Renowned for its health benefits and culinary versatility, olive oil is derived from the fruit of olive trees and comes in different varieties such as extra virgin, virgin, and regular olive oil."
+},
+{
+  id: 40,
+  category:'oils',
+  image: 'images/canola-oil.png',
+  name: 'Canola Oil',
+  price: 430,
+  description:"Derived from the seeds of the canola plant, canola oil is known for its mild flavor, high smoking point, and heart-healthy monounsaturated fats."
+},
+{
+  id: 41,
+  category:'oils',
+  image: 'images/sunflower-oil.png',
+  name: 'Sunflower Oil',
+  price: 450,
+  description:"Extracted from sunflower seeds, sunflower oil is a light and neutral-tasting oil that is commonly used for cooking, frying, and baking."
+},
+{
+  id: 42,
+  category:'oils',
+  image: 'images/soya-bean-oil.jpg',
+  name: 'Soyabean Oil',
+  price: 470,
+  description:"Produced from soybeans, soybean oil is a widely used cooking oil due to its neutral flavor, affordability, and high smoke point."
+},
+{
+  id: 43,
+  category:'oils',
+  image: 'images/avocado-oil.png',
+  name: 'Avogado Oil',
+  price: 500,
+  description:"Cold-pressed from the flesh of avocados, avocado oil is prized for its high monounsaturated fat content, creamy texture, and mild flavor."
+},
+{
+  id: 44,
+  category:'oils',
+  image: 'images/sesame-oil.png',
+  name: 'Sesame Oil',
+  price: 460,
+  description:"Derived from sesame seeds, sesame oil is characterized by its distinct nutty flavor and is often used in Asian cuisines for stir-frying and as a flavor enhancer."
+},
+{
+  id: 45,
+  category:'oils',
+  image: 'images/grape-oil.png',
+  name: 'Grape-Seed Oil',
+  price: 470,
+  description:"Extracted from the seeds of grapes, grapeseed oil is a light, neutral-tasting oil that is commonly used in cooking, baking, and salad dressings."
+},
+{
+  id: 46,
+  category:'oils',
+  image: 'images/corn-oil.png',
+  name: 'Corn Oil',
+  price: 490,
+  description:"Made from the germ of corn kernels, corn oil is a popular cooking oil known for its mild flavor and versatility in various culinary applications."
+  },
+  {
+    id: 47,
+    category:'flours',
+    image: 'images/wheat-flour.png',
+    name: 'Wheat Flour',
+    price: 90,
+    description:"Made from the entire wheat kernel, whole wheat flour is higher in fiber, vitamins, and minerals compared to refined flours."
+},
+{
+    id: 48,
+    category:'flours',
+    image: 'images/almond-flour.png',
+    name: 'Almond Flour',
+    price: 120,
+    description:"Ground from blanched almonds, almond flour is a popular gluten-free alternative with a nutty flavor and moist texture."
+},
+{
+    id: 49,
+    category:'flours',
+    image: 'images/coconut-flour.jpg',
+    name: 'Coconut Flour',
+    price: 110,
+    description:"Made from dried and ground coconut meat, coconut flour is a gluten-free option rich in fiber and adds a subtle coconut flavor to baked goods."
+},
+{
+    id: 50,
+    category:'flours',
+    image: 'images/rice-flour.png',
+    name: 'Rice Flour',
+    price: 110,
+    description:"Milled from ground rice grains, rice flour is a staple in many Asian cuisines and is often used in gluten-free baking, as well as thickening sauces and coatings."
+},
+{
+    id: 51,
+    category:'flours',
+    image: 'images/spelt-flour.png',
+    name: 'Spelt Flour',
+    price: 180,
+    description:"An ancient grain flour that has a nutty flavor and is lower in gluten compared to modern wheat, making it a potential alternative for those with mild gluten sensitivities."
+},
+{
+    id: 52,
+    category:'flours',
+    image: 'images/quinoa-flour.png',
+    name: 'Quinoa Flour',
+    price: 180,
+    description:"An ancient grain flour that has a nutty flavor and is lower in gluten compared to modern wheat, making it a potential alternative for those with mild gluten sensitivities."
+},
+{
+    id: 53,
+    category:'flours',
+    image: 'images/semolina-flour.png',
+    name: 'Semolina Flour',
+    price: 190,
+    description:"Commonly used in pasta-making, semolina flour adds a firm and chewy texture. It can also be used in breads and desserts."
+},
+{
+    id: 54,
+    category:'flours',
+    image: 'images/pastry-flour.png',
+    name: 'Pastry Flour',
+    price: 150,
+    description:"Ideal for delicate baked goods like pastries, pie crusts, and cookies, pastry flour produces tender and flaky results."
+},
+{
+    id: 55,
+    category:'flours',
+    image: 'images/oat-flour.png',
+    name: 'Oat Flour',
+    price: 195,
+    description:"A versatile gluten-free option, oat flour adds a subtle nutty flavor and moist texture to pancakes, cookies, muffins, and breads."
+},
+
 
 ];
 
   
   // Template string for the search modal
 const searchModalTemplate = `
-<div id="searchModal" class="fixed  inset-0 flex items-center justify-center z-50 hidden">
+<div id="searchModal" class="absolute  inset-0 flex items-start justify-center z-50 hidden">
 <div id="searchModalOverlay" class="absolute justify-center items-center inset-0 bg-black opacity-50"></div>
 <div class="bg-white p-4 rounded-lg  shadow-lg z-10 w-full max-w-md">
   <div class="flex items-center justify-between mb-4">
@@ -249,7 +466,7 @@ const searchModalTemplate = `
   +
   `</div>
   <!-- Results will be displayed here -->
-  <div id="searchResults" class="text-sm flex">
+  <div id="searchResults" class="text-sm">
   </div>
   <div class="text-right mt-4">
     <button id="closeSearchModal" class="text-gray-500 hover:text-gray-700">Close</button>

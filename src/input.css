@@ -1,17 +1,18 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Jost&family=Manrope:wght@200;300;400;500;600;700;800&family=Mooli&display=swap');
 @import 'tailwindcss/base';
 
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
 
-
 body{
     position: relative;
     scroll-behavior: smooth;
 }
 :root {
-    --font-family: 'Manrope', sans-serif;
+    /* --font-family: 'Manrope', sans-serif; */
+    --font-family: 'Mooli', sans-serif;
     --gradient-text: linear-gradient(90deg, #FFFF00 0%, #00BCD4 50%, #FF6452 100%);
     --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   
