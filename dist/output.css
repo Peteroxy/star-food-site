@@ -794,10 +794,6 @@ video {
   margin-top: 2rem;
 }
 
-.mt-\[-10\]{
-  margin-top: -10;
-}
-
 .mt-\[-10rem\]{
   margin-top: -10rem;
 }
@@ -806,28 +802,16 @@ video {
   margin-top: -12rem;
 }
 
+.mt-\[-14\]{
+  margin-top: -14;
+}
+
 .mt-\[14rem\]{
   margin-top: 14rem;
 }
 
 .mt-\[5rem\]{
   margin-top: 5rem;
-}
-
-.mt-\[-12\]{
-  margin-top: -12;
-}
-
-.mt-\[-\]{
-  margin-top: -;
-}
-
-.mt-\[-14\]{
-  margin-top: -14;
-}
-
-.mt-\[-8\]{
-  margin-top: -8;
 }
 
 .block{

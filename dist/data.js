@@ -298,7 +298,7 @@ const product = [
     {
         id: 37,
         category:'fruits',
-        image: 'images/Watermelond.png',
+        image: 'images/water-melon.png',
         name: 'Water Melon',
         price: 250,
         description:"Refreshing and hydrating, watermelon is a juicy fruit that quenches your thirst and offers a burst of vitamins, making it a perfect summertime treat."
